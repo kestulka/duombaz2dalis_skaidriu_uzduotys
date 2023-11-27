@@ -1,0 +1,204 @@
+1. 
+create table darbuotojai(
+  `darbuotojo_id` int primary key auto_increment,
+  `darbuotojo_vardas` varchar(255) NOT NULL,
+  `darbuotojo_pavarde` varchar(255) NOT NULL,
+  `darbuotojo_departamentas` varchar(255) NOT NULL
+);
+create table pareigos(
+  `pareigu_id` int primary key auto_increment,
+  `pareigu_pavadinimas` varchar(255) NOT NULL
+);
+CREATE TABLE algos (
+  `algos_id` INT PRIMARY KEY AUTO_INCREMENT,
+  `darbuotojo_id` INT NOT NULL,
+  `pareigu_id` INT NOT NULL,
+  `algos_dydis` DECIMAL(20, 2) NOT NULL,
+  FOREIGN KEY (`darbuotojo_id`) REFERENCES darbuotojai (`darbuotojo_id`),
+  FOREIGN KEY (`pareigu_id`) REFERENCES pareigos (`pareigu_id`)
+);
+
+2.
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (5, 5, 5, 1430.41);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (6, 6, 6, 5868.2);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (7, 7, 7, 1394.05);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (8, 8, 8, 2412.93);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (9, 9, 9, 4552.94);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (10, 10, 10, 6902.77);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (11, 11, 11, 5562.23);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (12, 12, 12, 4273.7);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (13, 13, 13, 1671.58);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (14, 14, 14, 4235.35);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (15, 15, 15, 1957.11);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (16, 16, 16, 5137.69);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (17, 17, 17, 4846.35);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (18, 18, 18, 2098.13);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (19, 19, 19, 5043.25);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (20, 20, 20, 7125.5);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (21, 21, 21, 7911.04);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (22, 22, 22, 6609.86);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (23, 23, 23, 6013.36);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (24, 24, 24, 5906.2);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (25, 25, 25, 818.48);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (26, 26, 26, 4826.16);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (27, 27, 27, 3209.51);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (28, 28, 28, 1245.72);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (29, 29, 29, 4719.97);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (30, 30, 30, 1363.67);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (31, 31, 31, 7389.04);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (32, 32, 32, 911.85);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (33, 33, 33, 5530.88);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (34, 34, 34, 6391.95);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (35, 35, 35, 4234.85);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (36, 36, 36, 7699.93);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (37, 37, 37, 3443.27);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (38, 38, 38, 2160.4);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (39, 39, 39, 5104.06);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (40, 40, 40, 2000.73);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (41, 41, 41, 4963.37);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (42, 42, 42, 6400.14);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (43, 43, 43, 2553.56);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (44, 44, 44, 5809.6);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (45, 45, 45, 5383.09);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (46, 46, 46, 3660.11);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (47, 47, 47, 3710.77);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (48, 48, 48, 3212.15);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (49, 49, 49, 4382.23);
+insert into darbuotojai (algos_id, darbuotojo_id, pareigu_id, algos_dydis) values (50, 50, 50, 2056.75)
+
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (1, 'Operations Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (2, 'Software Engineer');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (3, 'Sales Representative');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (4, 'Accountant');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (5, 'Sales Representative');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (6, 'Executive Assistant');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (7, 'Web Developer');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (8, 'Data Analyst');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (9, 'Operations Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (10, 'Graphic Designer');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (11, 'Sales Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (12, 'Graphic Designer');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (13, 'Customer Service Representative');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (14, 'Executive Assistant');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (15, 'Business Analyst');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (16, 'Customer Service Representative');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (17, 'Social Media Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (18, 'Operations Coordinator');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (19, 'Operations Coordinator');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (20, 'Content Writer');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (21, 'Data Scientist');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (22, 'Executive Assistant');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (23, 'Financial Analyst');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (24, 'HR Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (25, 'Software Developer');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (26, 'Data Scientist');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (27, 'Executive Assistant');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (28, 'Project Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (29, 'Financial Controller');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (30, 'Operations Coordinator');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (31, 'Quality Assurance Analyst');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (32, 'Marketing Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (33, 'Sales Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (34, 'Sales Representative');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (35, 'Customer Success Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (36, 'Digital Marketing Specialist');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (37, 'Customer Service Representative');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (38, 'Project Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (39, 'Sales Representative');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (40, 'Content Writer');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (41, 'Customer Service Representative');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (42, 'Financial Analyst');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (43, 'Sales Representative');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (44, 'Accountant');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (45, 'Content Writer');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (46, 'Project Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (47, 'Sales Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (48, 'Customer Success Manager');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (49, 'Executive Assistant');
+insert into pareigos (pareigu_id, pareigu_pavadinimas) values (50, 'Data Analyst');
+
+3.
+
+SELECT d.darbuotojo_vardas, d.darbuotojo_pavarde, a.algos_dydis
+FROM darbuotojai d
+JOIN algos a ON d.darbuotojo_id = a.darbuotojo_id
+JOIN pareigos p ON a.pareigu_id = p.pareigu_id;
+
+SELECT d.darbuotojo_vardas, d.darbuotojo_pavarde, a.algos_dydis
+FROM darbuotojai d
+LEFT JOIN algos a ON d.darbuotojo_id = a.darbuotojo_id
+LEFT JOIN pareigos p ON a.pareigu_id = p.pareigu_id;
+
+4.
+
+SELECT d.darbuotojo_vardas, d.darbuotojo_pavarde, p.pareigu_pavadinimas, a.algos_dydis
+FROM darbuotojai d
+INNER JOIN algos a ON d.darbuotojo_id = a.darbuotojo_id
+INNER JOIN pareigos p ON a.pareigu_id = p.pareigu_id;
+
+
+5.
+ SELECT d.darbuotojo_vardas, d.darbuotojo_pavarde, d.darbuotojo_departamentas
+FROM darbuotojai d;
+
+6.
+
+SELECT
+darbuotojo_departamentas as departamentas, count(*) as darbuotoju_skaicius
+from darbuotojai
+group by darbuotojo_departamentas;
+
+7.
+
+select darbuotojo_departamentas as skyriaus_pavadinimas, count(*) as darbuotoju_skaicius
+from darbuotojai
+group by darbuotojo_departamentas
+having count(*) > 2
+order by skyriaus_pavadinimas desc;
+
+8.
+
+SELECT
+    d.`darbuotojo_vardas`,
+    d.`darbuotojo_pavarde`,
+    d.`darbuotojo_departamentas`,
+    a.`algos_dydis`,
+    CASE
+        WHEN d.`darbuotojo_departamentas` = 'Product Management' THEN 'Darbuotojo alga x'
+        WHEN d.`darbuotojo_departamentas` = 'Marketing' THEN 'Darbuotojo alga y'
+        WHEN d.`darbuotojo_departamentas` = 'Sales' THEN 'Darbuotojo alga x'
+        WHEN d.`darbuotojo_departamentas` = 'Services' THEN 'Darbuotojo alga y'
+        WHEN d.`darbuotojo_departamentas` = 'Legal' THEN 'Darbuotojo alga x'
+        WHEN d.`darbuotojo_departamentas` = 'Human Resources' THEN 'Darbuotojo alga y'
+        WHEN d.`darbuotojo_departamentas` = 'Engineering' THEN 'Darbuotojo alga x'
+        WHEN d.`darbuotojo_departamentas` = 'Business Development' THEN 'Darbuotojo alga y'
+        WHEN d.`darbuotojo_departamentas` = 'Accounting' THEN 'Darbuotojo alga x'
+        ELSE '???'
+    END AS `darbuotojo_atlyginimas`
+FROM darbuotojai d
+JOIN algos a ON d.`darbuotojo_id` = a.`darbuotojo_id`;
+
+9.
+
+select
+darbuotojo_vardas,
+darbuotojo_pavarde,
+algos_dydis,
+case
+when algos_dydis > (select avg(algos_dydis) from algos) then 'didesne nei vidutine'
+else 'mazesne nei vidutine'
+end as ar_alga_didesne_nei_vidutine
+from darbuotojai
+join algos on darbuotojai.`darbuotojo_id` = algos.`darbuotojo_id`;
+
+10.
+
+SELECT
+    darbuotojo_departamentas AS departamentas,
+    COUNT(*) AS darbuotoju_skaicius,
+    CASE
+        WHEN COUNT(*) > 5 THEN 'Taip'
+        ELSE 'Ne'
+    END AS daugiau_nei_5_darbuotojai
+FROM darbuotojai
+GROUP BY darbuotojo_departamentas;
